@@ -46,6 +46,8 @@ FB.STR = {
     backupDue: 'No backup for 7+ days. Export now?', backupNow: 'Export now',
     updateReady: 'New version available', reload: 'Reload',
     mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat', sun: 'Sun', of: 'of',
+    btRules: 'Test-day rules', btStart: 'Start guide', btHowTo: 'How to', btEquip: 'Equipment & set-up',
+    btMeasure: 'How to measure & record', btInvalid: 'Does NOT count if', btNext: 'Next test',
   },
   vi: {
     appName: 'Fitness Buddy', today: 'Hôm nay', plan: 'Lịch tập', food: 'Ăn uống', progress: 'Tiến độ', more: 'Thêm',
@@ -92,6 +94,8 @@ FB.STR = {
     backupDue: 'Chưa sao lưu hơn 7 ngày. Xuất ngay?', backupNow: 'Xuất ngay',
     updateReady: 'Có phiên bản mới', reload: 'Tải lại',
     mon: 'T2', tue: 'T3', wed: 'T4', thu: 'T5', fri: 'T6', sat: 'T7', sun: 'CN', of: '/',
+    btRules: 'Quy tắc ngày kiểm tra', btStart: 'Bắt đầu hướng dẫn', btHowTo: 'Cách làm', btEquip: 'Dụng cụ & chuẩn bị',
+    btMeasure: 'Cách đo & ghi kết quả', btInvalid: 'KHÔNG tính nếu', btNext: 'Bài tiếp theo',
   },
 };
 FB.lang = () => (FB.state && FB.state.lang) || 'en';

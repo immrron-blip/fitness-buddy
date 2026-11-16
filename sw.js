@@ -1,8 +1,11 @@
 /* Offline-first service worker: precache the app shell, cache-first with background refresh. */
-const VERSION = 'fb-v1.0.0';
+const VERSION = 'fb-v1.1.0';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/app.css',
-  'js/i18n.js', 'js/core.js', 'js/ui.js', 'js/today.js', 'js/plan.js', 'js/food.js', 'js/progress.js', 'js/more.js', 'js/main.js',
+  'js/i18n.js', 'js/core.js', 'js/ui.js', 'js/bt-data.js', 'js/baseline.js', 'js/today.js', 'js/plan.js', 'js/food.js',
+  'js/progress.js', 'js/more.js', 'js/main.js',
+  'img/bt/box.gif', 'img/bt/broad.gif', 'img/bt/cmj.gif', 'img/bt/hop.gif', 'img/bt/knee_wall.gif', 'img/bt/mbthrow.gif',
+  'img/bt/ohs.gif', 'img/bt/ohs_score.png', 'img/bt/sl_stance.gif', 'img/bt/sprint.gif', 'img/bt/sprint_setup.png', 'img/bt/ybal.gif',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png', 'icons/apple-touch-icon.png',
   'img/ex/snatch.png', 'img/ex/power_snatch.png', 'img/ex/sn_pull.png', 'img/ex/sn_transition.png', 'img/ex/ohs.png',
   'img/ex/cj.png', 'img/ex/cl_pull.png', 'img/ex/hpc_pj.png', 'img/ex/dip_pp.png', 'img/ex/split_jerk.png',

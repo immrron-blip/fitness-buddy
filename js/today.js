@@ -53,7 +53,8 @@ window.FB = window.FB || {};
         h('div.ex-title', h('strong', L(r.ex)), h('div.chip-row', meta)),
         g ? h('button.thumb', { onclick: () => FB.showGuide(r.g), 'aria-label': t('guide') }, h('img', { src: g.img, alt: '', loading: 'lazy' }), h('span', t('guide'))) : null),
       r.notes ? h('p.ex-note', L(r.notes)) : null,
-      isTest ? h('div.ex-log', h('button.btn.primary.block', { onclick: () => { FB.openBaseline = true; FB.go('progress'); } }, `🎯 ${t('baselineTests')} →`), note) :
+      isTest ? h('div.ex-log', FB.btSession(r) ? FB.btSessionCard(FB.btSession(r))
+        : h('button.btn.primary.block', { onclick: () => { FB.openBaseline = true; FB.go('progress'); } }, `🎯 ${t('baselineTests')} →`), note) :
       h('div.ex-log',
         showLoad ? h('div.ex-log-row', h('span.f-label', t('actual')), loadBox) : null,
         h('div.ex-log-row', rpeSel, FB.restSec(r.rest) ? h('button.btn.sm', { onclick: () => FB.startTimer(FB.restSec(r.rest)) }, `⏱ ${r.rest}`) : null),

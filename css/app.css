@@ -165,5 +165,14 @@ table { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .welcome { text-align: center; padding: 1.4rem 1rem; } .welcome img { border-radius: 18px; } .welcome h2 { margin: .6rem 0; }
 .welcome .btn.block { text-align: center; margin: 1rem 0 .5rem; }
 .danger-zone { margin-top: 1.5rem; }
+.bt-list { display: grid; gap: .55rem; }
+.bt-item { border: 1px solid var(--line); border-radius: 12px; padding: .6rem; background: #0f1a33; }
+.bt-top { display: flex; justify-content: space-between; align-items: center; gap: .5rem; }
+.bt-top strong { font-size: .95rem; }
+.bt-row { display: grid; grid-template-columns: 1fr 120px; gap: .5rem; align-items: center; margin-top: .45rem; font-size: .85rem; color: var(--muted); }
+.bt-in { text-align: center; font-weight: 700; }
+.bt-gif { image-rendering: auto; }
+.bt-rules { padding-left: 1.2rem; } .bt-rules li { margin: .45rem 0; }
+.btn.center { text-align: center; }
 @media (min-width: 700px) { .view { padding-top: 1.2rem; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

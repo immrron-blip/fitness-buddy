@@ -2,7 +2,7 @@
 window.FB = window.FB || {};
 (() => {
   const KEY_STATE = 'fb.state.v1', KEY_PROG = 'fb.program.v1';
-  FB.VERSION = '1.0.0';
+  FB.VERSION = '1.1.0';
 
   const blank = () => ({ v: 1, lang: 'en', tm: {}, lastBackup: null,
     log: { ex: {}, sess: {}, home: {}, nutri: {}, week: {}, base: {} } });

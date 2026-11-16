@@ -81,7 +81,10 @@ window.FB = window.FB || {};
         const cur = base[b.id] || {};
         const inp = (k, ph) => { const i = h('input', { type: 'text', inputMode: 'decimal', value: cur[k] ?? '', placeholder: ph || '',
           onchange: () => { base[b.id] = FB.stamp({ ...(base[b.id] || {}), [k]: i.value.trim() }); FB.save(); } }); return i; };
-        return [h('tr.b-head', h('td', { colSpan: 4 }, h('strong', L(b.test)), h('small.muted.block', `${L(b.quality)} · ${L(b.protocol)}`))),
+        const bt = FB.btFor(b.test.en);
+        return [h('tr.b-head', h('td', { colSpan: 4 }, h('div.bt-top', h('strong', L(b.test)),
+            bt ? h('button.btn.sm', { onclick: () => FB.showBt(bt) }, `▶ ${t('btHowTo')}`) : null),
+          h('small.muted.block', `${L(b.quality)} · ${L(b.protocol)}`))),
           h('tr', h('td', b.unit || ''), h('td', inp('w1', b.w1)), h('td', inp('w12')), h('td.muted', L(b.target)))];
       })));
     root.append(root2);
